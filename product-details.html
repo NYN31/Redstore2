@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-  <title>All Products - RedStore</title>
+  <title>Products-details - RedStore</title>
 </head>
 <body>
     <div class="container">
@@ -21,7 +21,7 @@
           <ul id="MenuItems">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Product</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#product-details.html">About</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Account</a></li>
           </ul>
@@ -30,122 +30,60 @@
         <img src="images/menu.png" class="menu-icon" onClick="menutoggle()">
       </div>
     </div>
-  
+  <!----------- Single product details------------>
 
+  <div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="images/gallery-1.jpg" width="100%" alt="" id="ProductImg">
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-1.jpg" alt="" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-2.jpg" alt="" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-3.jpg" alt="" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-4.jpg" alt="" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Home / T-Shirt</p>
+            <h1><span class="span-color">R</span>Red Printd T-Shird by HRX</h1>
+            <h4>$50.00</h4>
+            <select>
+                <option value="">Select Size</option>
+                <option value="">XXL</option>
+                <option value="">XL</option>
+                <option value="">Large</option>
+                <option value="">Medium</option>
+                <option value="">Small</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+            <h3>Product Details <i class="fas fa-ident"></i></h3> <br>
+            <small style="color: #fff; font-weight: 300;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tema. Dolorum rerum pariatur doloremque praesentium inventore tempora possimus illo libero quam temporibus.</small>
+        </div>
+    </div>
+  </div>
+
+  <!--------------- TITLE --------------->
+  <div class="small-container">
+      <div class="row row-2">
+          <h2>Related Products</h2>
+          <p>View more</p>
+      </div>
+  </div>
+
+
+  <!------------- PRODUCTS ----------->
   <div class="products">
     <div class="small-container">
-
-      <div class="row row-2">
-        <h2><span class="span-color">A</span>ll <span class="span-color">P</span>roducts</h2>
-        <select name="" id="">
-          <option value="">Default Sorting</option>
-          <option value="">Sort by price</option>
-          <option value="">Sort by popularity</option>
-          <option value="">Sort by rating</option>
-          <option value="">Sort by sale</option>
-        </select>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <img src="images/product-1.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/product-2.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/product-3.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/product-4.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <img src="images/product-5.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <!--link: Font awsome 4 cdn-->
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/product-6.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/product-7.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/product-8.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-      </div>
       <div class="row">
         <div class="col-4">
           <img src="images/product-9.jpg">
@@ -196,14 +134,6 @@
           </div>
           <p>$50.00</p>
         </div>
-      </div>
-
-      <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>&#8594;</span>
       </div>
     </div>
   </div>
@@ -259,6 +189,26 @@
       if( MenuItems.style.maxHeight == "0px" ) MenuItems.style.maxHeight = "200px" ;
       else  MenuItems.style.maxHeight = "0px" ;
     }
+  </script>
+
+  <!--------------- Js For Product Gallery -------------->
+
+  <script>
+      var ProductImg = document.getElementById("ProductImg");
+      var SmallImg = document.getElementsByClassName("small-img");
+
+      SmallImg[0].onclick = function() {
+          ProductImg.src = SmallImg[0].src ;
+      }
+      SmallImg[1].onclick = function() {
+          ProductImg.src = SmallImg[1].src ;
+      }
+      SmallImg[2].onclick = function() {
+          ProductImg.src = SmallImg[2].src ;
+      }
+      SmallImg[3].onclick = function() {
+          ProductImg.src = SmallImg[3].src ;
+      }
   </script>
 </body>
 </html>

@@ -1,16 +1,20 @@
 *{
-  margin : 0px ;
-  padding : 0px ;
+  margin : 0;
+  padding : 0 ;
   box-sizing : border-box ;
 }
 body{
   font-family: 'Fira Sans', sans-serif;
+  background-color: #63b7e0;
+  color: #fff;
+  font-size: 20px;
 }
 
 .navbar{
   display : flex ;
   align-items : center ;
   padding : 20px ;
+  width: 100%;
 }
 nav{
   flex : 1 ;
@@ -27,11 +31,12 @@ nav ul li{
 }
 a{
   text-decoration: none ;
-  color : #555 ;
+  color : #fff ;
 }
-p{
-  color : #555 ;
+.header p{
+  color : #333 ;
   font-size : 20px ;
+  font-weight: bold;
 }
 .container{
   max-width : 1300px ;
@@ -54,9 +59,14 @@ p{
   padding : 50px 0 ;
 }
 .col-2 h1{
+  color: rgb(240, 224, 224) ;
   font-size : 50px ;
   line-height: 60px ;
   margin : 25px 0 ;
+}
+.span-color {
+  font-size: 200% ;
+  color: rgb(255, 0, 0)
 }
 .btn{
   display : inline-block ;
@@ -70,14 +80,19 @@ p{
 .btn:hover{
   background : #563434;
 }
-.header{
-  background : radial-gradient(#fff, #ffd6d6) ;
-}
+
 .header .row {
   margin-top : 70px ;
 }
+.menu-icon { display: none; cursor: pointer; }
+
+/***************************************/
+/********* FEATURE CATOGORIES **********/
+/***************************************/
+
 .categories{
-  margin : 70px 0 ;
+  padding : 70px 0 ;
+  background-color: #e4d991;
 }
 .col-3 {
   flex-basis : 30% ;
@@ -93,6 +108,11 @@ p{
   padding-left : 25px ;
   padding-right : 25px ;
 }
+
+/***************************************/
+/********* FEATURE PRODUCTS ************/
+/***************************************/
+
 .col-4{
   flex-basis: 25% ;
   padding : 10px ; 
@@ -111,7 +131,11 @@ p{
   margin : 0 auto 80px ;
   position : relative ;
   line-height : 60px ;
-  color : #555 ;
+  color : #000 ;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 180%;
 }
 .title::after{
   content : '' ;
@@ -125,21 +149,27 @@ p{
   transform : translateX(-50%) ;
 }
 h4{
-  color : #555 ;
-  font-weight: normal ;
+  color : #000 ;
+  font-weight: 500 ;
 }
 .col-4 p{
   font-size : 14px ;
+  color: #000;
 }
 .rating .fa{
   color : #ff523b ;
 }
 
-/* ------------- Offer -------------*/
+/***************************************/
+/************** OFFERS *****************/
+/***************************************/
 .offer{
-  background : radial-gradient(#fff, #ffd6d6) ;
-  margin-top : 80px ;
+  background : radial-gradient(#fff3e6, #ddb78e) ;
   padding : 30px 0 ;
+}
+.offer h1 { color: #555; }
+.offer p {
+  color:#555;
 }
 .col-2 .offer-img {
   padding : 50px ;
@@ -148,14 +178,19 @@ small {
   color : #555 ;
 }
 
-/* ---------------- Testimonial -------------------*/
+/***************************************/
+/************ TESTIMONIAL **************/
+/***************************************/
+
 .testimonial {
-  padding-top : 100px ;
+  padding-top : 20px ;
 }
 .testimonial .col-3{
+  background-color: #f8f1f1;
+  border-radius: 10px;
   text-align : center ;
   padding : 40px 20px ;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
   cursor : pointer ;
   transition : transform 0.5s ;
 }
@@ -172,15 +207,17 @@ small {
 .col-3 p{
   font-size : 12px ;
   margin : 12px 0 ;
-  color : #777 ;
+  color : #000 ;
 }
 .testimonial .col-3 h3{
   font-weight: 600;
-  color : #555 ;
+  color : #000 ;
   font-size : 16px ;
 }
 
-/*---------- Brands ---------*/
+/***************************************/
+/************    BRANDS   **************/
+/***************************************/
 
 .brands{
   margin : 100px auto ;
@@ -192,14 +229,16 @@ small {
   width : 100% ;
   cursor : pointer ;
   padding-top : 70px ;
-  filter : grayscale(100%) ;
+  filter : grayscale(70%) ;
 }
 .col-5 img:hover{
   filter : grayscale(0) ;
 }
 
 
-/*--------- Footer ----------*/
+/***************************************/
+/************    FOOTER   **************/
+/***************************************/
 
 .footer {
   background : #000 ;
@@ -260,14 +299,16 @@ ul{
   margin-left : 20px ;
 }
 
-/* -------------- About page ONLY--------------*/
+/***************************************/
+/********** PRODUCT PAGE ONLY **********/
+/***************************************/
 
 .row-2{
   justify-content : space-between ;
   margin : 100px auto 50px ;
 }
 select {
-  border : 2px solid red ;
+  border : 2px solid #000 ;
   padding : 5px ;
 }
 select:focus{
@@ -279,7 +320,8 @@ select:focus{
 }
 .page-btn span{
   display : inline-block ;
-  border : 1px solid #ff523b ;
+  border : 2px solid #000 ;
+  color: black;
   margin-left : 10px ;
   width : 40px ;
   height : 40px ;
@@ -293,57 +335,45 @@ select:focus{
 }
 
 
-.menu-icon { display: none; cursor: pointer; }
-/*----------- media query for menu ------------*/
+/***************************************/
+/********** SINGLE-PRODUCT PAGE ONLY **********/
+/***************************************/
 
-@media only screen and (max-width : 800px){
-    nav ul{
-      position : absolute ;
-      top : 70px ;
-      left : 0 ;
-      background : #333;
-      width : 100% ;
-      overflow : hidden ;
-      transition : max-height 0.5s;
-    }
-    nav ul li{
-      display : block ;
-      margin-right : 50px ;
-      margin-top : 10px ;
-      margin-bottom : 10px ;
-    }
-    nav ul li a {
-      color : #fff ;
-    }
-    .menu-icon{
-      display : block ;
-      cursor : pointer ;
-    }
+.single-product {
+  margin-top: 80px; 
 }
-@media only screen and (max-width : 600px) {
-  .row {
-    text-align: center ;
-  }
-  .col-2, .col-3, .col-4{
-    flex-basis : 100% ;
-  }
+.single-product .col-2 img {
+  padding: 0 ;
 }
-
-
-/*
-
-<div class="profile">
-                    <div class="row">
-                        <div class="col-2 circular-img">
-                            <img src="images/buy-1.jpg">
-                        </div>
-                        <div class="col-6">
-                            <a href="#"><p>@NOYON31</p></a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-                        </div>
-                    </div>                        
-                </div>
-
-*/
+.single-product .col-2 { 
+  padding: 20px; 
+}
+.single-product h4 {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select {
+  display: block ;
+  padding: 10px;
+  margin-top: 20px;
+}
+.single-product input {
+  width: 100px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #000;
+}
+input:focus {
+  outline:none;
+}
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
