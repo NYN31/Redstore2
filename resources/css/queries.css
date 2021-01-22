@@ -57,4 +57,6 @@
       font-size: 120%;
       margin: 0 0;
   }
+  .cart-info p { display: none;}
+  .cart-info small { font-size: 60%; }
 }
